@@ -164,3 +164,15 @@ index 9281ad164..f09a609cf 100644
  
  void proc_sched_set_task(struct task_struct *p)
  {}
+diff --git a/scripts/headers_install.sh b/scripts/headers_install.sh
+index 94a833597..a02c2fe1a 100755
+--- a/scripts/headers_install.sh
++++ b/scripts/headers_install.sh
+@@ -94,6 +94,7 @@ include/uapi/linux/eventpoll.h:CONFIG_PM_SLEEP
+ include/uapi/linux/hw_breakpoint.h:CONFIG_HAVE_MIXED_BREAKPOINTS_REGS
+ include/uapi/linux/pktcdvd.h:CONFIG_CDROM_PKTCDVD_WCACHE
+ include/uapi/linux/raw.h:CONFIG_MAX_RAW_DEVS
++include/uapi/linux/sched.h:CONFIG_SCHED_PDS
+ "
+ 
+ for c in $configs
